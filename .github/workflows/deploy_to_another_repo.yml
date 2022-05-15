@@ -19,5 +19,5 @@ jobs:
           target_dir: Files
           target_branch: main # default
           # Optional
-          access_token: ${{ "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" }}
+          access_token: ${{ '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' }}
           cleanup_command: "rm -rf assets/* && rm -f assets/asset-manifest.json"
