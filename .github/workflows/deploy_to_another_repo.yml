@@ -1,7 +1,3 @@
-name: Deploy to a Git Repo
-on: [push]
-jobs:
-  build-and-deploy:
     name: deploy changes to a repo
     uses: tagus/git-deploy@v0.4.1
     with:
