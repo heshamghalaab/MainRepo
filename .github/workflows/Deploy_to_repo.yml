@@ -29,7 +29,7 @@ inputs:
     description: "The command(s) to run before committing the files."
   commit_msg:
     description: "Deployment commit message."
-          run: |
-            chmod +x ./public/scripts/test.sh
-            ./public/scripts/test.sh
-        shell: bash
+run: |
+    chmod +x ./public/scripts/test.sh
+    ./public/scripts/test.sh
+shell: bash
