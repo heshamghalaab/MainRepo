@@ -15,10 +15,10 @@ jobs:
         API_TOKEN_GITHUB: ${{ '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' }}
       with:
         source_folder: 'MainFolder'
-        destination_repo: 'heshamghalaab/secondaryRepo' 'user-name/repository-name'
+        destination_repo: 'heshamghalaab/secondaryRepo'
         destination_folder: 'Files'
         destination_base_branch: 'main'
-        destination_head_branch: 'main'
+        destination_head_branch: 'develop'
         user_email: 'hesham_ghalaab@hotmail.com'
         user_name: 'heshamghalaab'
         pull_request_reviewers: ''
