@@ -1,23 +1,23 @@
-name: Deploy Files
-on:
-  push:
-    branches: [main]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    name: Deploy Files
-    steps:
-      - name: Checkout the commit
-        uses: actions/checkout@v3
+# name: Deploy Files
+# on:
+#   push:
+#     branches: [main]
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     name: Deploy Files
+#     steps:
+#       - name: Checkout the commit
+#         uses: actions/checkout@v3
         
-      - name: Deploy
-        uses: manzoorwanijk/action-deploy-to-repo@master
-        with:
-          src_dir: MainRepo.swift
-          target_owner: heshamghalaab
-          target_repo: secondaryRepo
-          target_dir: Files
-          target_branch: main # default
-          # Optional
-          access_token: ${{ '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' }}
-          cleanup_command: ""
+#       - name: Deploy
+#         uses: manzoorwanijk/action-deploy-to-repo@master
+#         with:
+#           src_dir: MainRepo.swift
+#           target_owner: heshamghalaab
+#           target_repo: secondaryRepo
+#           target_dir: Files
+#           target_branch: main # default
+#           # Optional
+#           access_token: ${{ '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' }}
+#           cleanup_command: ""
