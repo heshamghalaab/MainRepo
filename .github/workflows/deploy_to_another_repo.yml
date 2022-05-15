@@ -1,8 +1,9 @@
-    name: deploy changes to a repo
-    uses: tagus/git-deploy@v0.4.1
-    with:
-      changes: public
-      repository: https://github.com/heshamghalaab/secondaryRepo.git
-      name: heshamghalaab
-      email: hesham_ghalaab@hotmail.com
-      clean_repo: true
+on: [push]
+name: deploy changes to a repo
+uses: tagus/git-deploy@v0.4.1
+with:
+    changes: public
+    repository: https://github.com/heshamghalaab/secondaryRepo.git
+    name: heshamghalaab
+    email: hesham_ghalaab@hotmail.com
+    clean_repo: true
