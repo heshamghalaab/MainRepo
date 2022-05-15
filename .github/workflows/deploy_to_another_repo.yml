@@ -10,14 +10,6 @@ jobs:
       - name: Checkout the commit
         uses: actions/checkout@v3
         
-      - name: Set up Node
-        uses: dcodeIO/setup-node-nvm@master
-        with:
-          node-version: lts/*
-
-      - name: Install deps and build
-        run: npm install; npm run build
-        
       - name: Deploy
         uses: manzoorwanijk/action-deploy-to-repo@master
         with:
