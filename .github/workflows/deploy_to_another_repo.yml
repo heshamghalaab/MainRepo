@@ -13,7 +13,7 @@ jobs:
       - name: Deploy
         uses: manzoorwanijk/action-deploy-to-repo@master
         with:
-          src_dir: MainRepo
+          src_dir: MainRepo.swift
           target_owner: heshamghalaab
           target_repo: secondaryRepo
           target_dir: Files
