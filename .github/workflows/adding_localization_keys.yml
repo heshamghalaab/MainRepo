@@ -1,0 +1,26 @@
+name: Push File
+
+on: push
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Create pull request
+      uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      env:
+        API_TOKEN_GITHUB: ${{ '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' }}
+      with:
+        source_folder: 'MainFolder'
+        destination_repo: 'heshamghalaab/secondaryRepo' 'user-name/repository-name'
+        destination_folder: 'Files'
+        destination_base_branch: 'main'
+        destination_head_branch: 'main'
+        user_email: 'hesham_ghalaab@hotmail.com'
+        user_name: 'heshamghalaab'
+        pull_request_reviewers: ''
+        
+ 
