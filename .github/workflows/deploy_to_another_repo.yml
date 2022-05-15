@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy Assets
     steps:
-      - name: Checkout the commit
-        uses: actions/checkout@v2
-
       - name: Deploy
         uses: manzoorwanijk/action-deploy-to-repo@master
         with:
@@ -20,4 +17,4 @@ jobs:
           target_branch: main # default
           # Optional
           access_token: ${{ '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' }}
-          cleanup_command: "rm -rf assets/* && rm -f assets/asset-manifest.json"
+          cleanup_command: ""
