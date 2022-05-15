@@ -17,8 +17,16 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       
       - uses: actions/checkout@v3
+
       - name: Run script file
-        run: |
-            chmod +x ./public/scripts/test.sh
-            ./public/scripts/test.sh
-        shell: bash
+        uses: ./.github/workflows/Deploy_to_repo
+        with:
+          src_dir: MainRepo.swift
+          target_owner: heshamghalaab
+          target_repo: secondaryRepo
+          target_dir: Files
+          target_branch: main # default
+          # Optional
+          access_token: ${{ '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' }}
+          cleanup_command: ""
+
