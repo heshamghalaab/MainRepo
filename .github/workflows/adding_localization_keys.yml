@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Create pull request
-      uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      uses: heshamghalaab/deployment-to-another-repo@v1
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
@@ -18,7 +18,7 @@ jobs:
         destination_repo: 'heshamghalaab/secondaryRepo'
         destination_folder: 'Files'
         destination_base_branch: 'main'
-        destination_head_branch: 'feature/one'
+        destination_head_branch: 'feature/two'
         user_email: 'hesham_ghalaab@hotmail.com'
         user_name: 'heshamghalaab'
         pull_request_reviewers: ''
