@@ -18,7 +18,7 @@ jobs:
         destination_repo: 'heshamghalaab/secondaryRepo'
         destination_folder: 'Files'
         destination_base_branch: 'main'
-        destination_head_branch: 'develop'
+        destination_head_branch: 'feature/one'
         user_email: 'hesham_ghalaab@hotmail.com'
         user_name: 'heshamghalaab'
         pull_request_reviewers: ''
