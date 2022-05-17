@@ -25,7 +25,7 @@ jobs:
         destination_repo: 'heshamghalaab/secondaryRepo'
         destination_folder: 'Files'
         destination_base_branch: 'main'
-        destination_head_branch: "${GITHUB_REF##*/}"
+        destination_head_branch: ${{GITHUB_REF##*/}}
         user_email: 'hesham_ghalaab@hotmail.com'
         user_name: 'heshamghalaab'
         pull_request_reviewers: ''
