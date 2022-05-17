@@ -15,6 +15,11 @@ jobs:
     - name: Branch name ya hesham
       run: echo running on branch ${GITHUB_REF##*/}
 
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
+
     - name: Create pull request
       uses: paygoc6/action-pull-request-another-repo@v1.0.1
       #       uses: heshamghalaab/deployment-to-another-repo@v1
