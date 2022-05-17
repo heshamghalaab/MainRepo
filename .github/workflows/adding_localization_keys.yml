@@ -1,6 +1,9 @@
 name: Push File
 
-on: push
+on: 
+  push:
+    paths:
+      - 'localization/**'
 
 jobs:
   pull-request:
