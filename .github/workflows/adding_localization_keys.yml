@@ -12,16 +12,19 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Create pull request
-      uses: heshamghalaab/deployment-to-another-repo@v1
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-      with:
-        source_folder: 'MainFolder'
-        destination_repo: 'heshamghalaab/secondaryRepo'
-        destination_folder: 'Files'
-        destination_base_branch: 'main'
-        destination_head_branch: 'feature/two'
-        user_email: 'hesham_ghalaab@hotmail.com'
-        user_name: 'heshamghalaab'
-        pull_request_reviewers: ''
+    - name: Branch name ya hesham
+      run: echo running on branch ${GITHUB_REF##*/}
+
+#     - name: Create pull request
+#       uses: heshamghalaab/deployment-to-another-repo@v1
+#       env:
+#         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#       with:
+#         source_folder: 'MainFolder'
+#         destination_repo: 'heshamghalaab/secondaryRepo'
+#         destination_folder: 'Files'
+#         destination_base_branch: 'main'
+#         destination_head_branch: 'feature/two'
+#         user_email: 'hesham_ghalaab@hotmail.com'
+#         user_name: 'heshamghalaab'
+#         pull_request_reviewers: ''
