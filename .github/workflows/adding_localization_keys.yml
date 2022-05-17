@@ -2,7 +2,7 @@ name: Push File
 
 on: 
   push:
-    paths:
+    branches:
       - localization/**
 
 jobs:
