@@ -3,7 +3,7 @@ name: Push File
 on: 
   push:
     paths:
-      - 'localization/**'
+      - localization/**
 
 jobs:
   pull-request:
