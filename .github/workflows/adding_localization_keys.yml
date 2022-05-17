@@ -21,8 +21,8 @@ jobs:
       id: extract_branch
 
     - name: Create pull request
-      uses: paygoc6/action-pull-request-another-repo@v1.0.1
-      #       uses: heshamghalaab/deployment-to-another-repo@v1
+      #uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      uses: heshamghalaab/deploy_to_a_repository_action@v1
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
